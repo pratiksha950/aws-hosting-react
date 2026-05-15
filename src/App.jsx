@@ -1,122 +1,157 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
+    <div>
+      {/* Navbar */}
+      <nav>
+        <h1>Hostify</h1>
+
+        <ul>
+          <li>Home</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
+      <hr />
+
+      {/* Hero Section */}
+      <section>
+        <h1>Fast & Secure App Hosting</h1>
+
+        <p>
+          Deploy your websites and applications quickly with reliable cloud
+          hosting.
+        </p>
+
+        <button>Start Hosting</button>
+        <button>Learn More</button>
+      </section>
+
+      <hr />
+
+      {/* Features */}
+      <section>
+        <h2>Our Features</h2>
+
         <div>
-          <h1>Get started</h1>
+          <h3>Fast Deployment</h3>
+          <p>Upload and launch your app in seconds.</p>
+        </div>
+
+        <div>
+          <h3>Global CDN</h3>
+          <p>Deliver content quickly around the world.</p>
+        </div>
+
+        <div>
+          <h3>Free SSL</h3>
+          <p>Secure your website with HTTPS encryption.</p>
+        </div>
+
+        <div>
+          <h3>Cloud Storage</h3>
+          <p>Reliable and scalable storage solutions.</p>
+        </div>
+      </section>
+
+      <hr />
+
+      {/* Pricing */}
+      <section>
+        <h2>Pricing Plans</h2>
+
+        <div>
+          <h3>Basic</h3>
+          <p>$5 / month</p>
+          <ul>
+            <li>1 Website</li>
+            <li>5 GB Storage</li>
+            <li>Free SSL</li>
+          </ul>
+
+          <button>Choose Plan</button>
+        </div>
+
+        <div>
+          <h3>Pro</h3>
+          <p>$15 / month</p>
+          <ul>
+            <li>10 Websites</li>
+            <li>50 GB Storage</li>
+            <li>24/7 Support</li>
+          </ul>
+
+          <button>Choose Plan</button>
+        </div>
+
+        <div>
+          <h3>Enterprise</h3>
+          <p>$30 / month</p>
+          <ul>
+            <li>Unlimited Websites</li>
+            <li>Unlimited Storage</li>
+            <li>Priority Support</li>
+          </ul>
+
+          <button>Choose Plan</button>
+        </div>
+      </section>
+
+      <hr />
+
+      {/* Testimonials */}
+      <section>
+        <h2>What Users Say</h2>
+
+        <div>
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            "Amazing hosting platform. My website loads super fast now."
           </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+          <h4>- Rahul</h4>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+
+        <div>
+          <p>
+            "Very easy deployment process and great support team."
+          </p>
+
+          <h4>- Priya</h4>
         </div>
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+      <hr />
+
+      {/* Contact */}
+      <section>
+        <h2>Contact Us</h2>
+
+        <form>
+          <input type="text" placeholder="Enter your name" />
+          <br />
+          <br />
+
+          <input type="email" placeholder="Enter your email" />
+          <br />
+          <br />
+
+          <textarea placeholder="Enter your message"></textarea>
+          <br />
+          <br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <hr />
+
+      {/* Footer */}
+      <footer>
+        <p>© 2026 Hostify. All rights reserved.</p>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
