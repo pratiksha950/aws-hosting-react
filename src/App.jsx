@@ -17,7 +17,7 @@ function App() {
 
       {/* Hero Section */}
       <section>
-        <h1>Fast & Secure App Hosting</h1>
+        <h1>Fast & Secure App Hosting ...........</h1>
 
         <p>
           Deploy your websites and applications quickly with reliable cloud
