@@ -6,7 +6,7 @@ function App() {
         <h1>Hostify</h1>
 
         <ul>
-          <li>Home</li>
+          <li>Home ,,</li>
           <li>Features</li>
           <li>Pricing</li>
           <li>Contact</li>
